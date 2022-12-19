@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Mont';
+  font-style: normal;
+  src:
+    url('../fonts/esport/Mont-Bold.woff2') format('woff2'),
+    url('../fonts/esport/Mont-Bold.woff') format('woff'),
+    url('../fonts/esport/Mont-Bold.ttf') format('ttf');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gobold';
+  font-style: normal;
+  src:
+    url('../fonts/esport/Gobold Bold.woff2') format('woff2'),
+    url('../fonts/esport/Gobold Bold.woff') format('woff'),
+    url('../fonts/esport/Gobold Bold.ttf') format('ttf');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GoboldHight';
+  font-style: normal;
+  src:
+    url('../fonts/esport/Gobold High Bold.woff2') format('woff2'),
+    url('../fonts/esport/Gobold High Bold.woff') format('woff'),
+    url('../fonts/esport/Gobold High Bold.ttf') format('ttf');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PFDinTextCompPro';
+  font-style: normal;
+  src:
+    url('../fonts/esport/PFDinTextCompPro-Regular.woff2') format('woff2'),
+    url('../fonts/esport/PFDinTextCompPro-Regular.woff') format('woff'),
+    url('../fonts/esport/PFDinTextCompPro-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+// @font-face {
+//   font-family: 'Arial';
+//   font-style: normal;
+//   src:
+//     url('../fonts/Arial.woff2') format('woff2'),
+//     url('../fonts/Arial.woff') format('woff'),
+//     url('../fonts/Arial.ttf') format('ttf');
+//   font-weight: 700;
+//   font-display: swap;
+// }
+
+
+$montserrat: 'Montserrat',
+sans-serif;
+$montserratSemi: 'Montserrat SemiBold',
+sans-serif;

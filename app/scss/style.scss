@@ -1,0 +1,28 @@
+@import "global/reset";
+@import "global/vars";
+@import "global/mixins";
+@import "global/global";
+@import "global/fonts";
+@import "global/libs";
+
+@import "components/_img"; // локальный  файл стилей  для позиционирования флагов
+@import "components/_fflag"; // глобальный файл стилей  для позиционирования флагов
+@import "components/_button";
+@import "components/_title";
+@import "components/_container";
+@import "components/_appBtn";
+
+@import "blocks/_links";
+@import "blocks/_soc-networks";
+@import "blocks/_switcher";
+@import "blocks/_header";
+@import "blocks/_logo";
+@import "blocks/_content-block";
+@import "blocks/_btn-block";
+@import "blocks/_heroes";
+
+@import "blocks/_popUp";
+// @import "blocks/_formStyle";
+// @import "blocks/_intlTelInput"; // файл стилей  для позиционирования флагов баблиотеки
+
+@import "blocks/_footer";

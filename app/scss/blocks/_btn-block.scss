@@ -1,0 +1,43 @@
+.btn-block {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: drop-shadow(2px 4px 6px black);
+
+  @include mq(md) {
+    max-width: 560px;
+  }
+
+  .rules-link {
+    padding: 1em 0;
+    @extend %PFDin-400;
+    font-size: 21px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: #fff;
+    -webkit-mask-image: linear-gradient(
+      -75deg,
+      rgba(255, 255, 255, 0.7) 30%,
+      #fff 50%,
+      rgba(255, 255, 255, 0.7) 70%
+    );
+    -webkit-mask-size: 200%;
+    -webkit-animation: shine 2s infinite;
+    animation: shine 2s infinite;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+
+  @keyframes shine {
+    0% {
+      mask-position: -50%;
+      -webkit-mask-position: 150%;
+    }
+
+    100% {
+      mask-position: -50%;
+      -webkit-mask-position: -50%;
+    }
+  }
+}

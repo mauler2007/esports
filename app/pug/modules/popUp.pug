@@ -1,0 +1,38 @@
+.popUp.popUp--rules#popupRules
+    .popUp__block
+        .popUp__close
+            a#closePopUp
+        .popUp__content
+          .popUp__android
+            .popUp__head
+              include ../icons/playMarket
+              //- svg.popUp__svg 
+              //-   use(xlink:href="images/sprite.svg#icon-play")
+              h2 how to install the Android app?
+            .popUp__border
+              .popUp__box
+                .popUp__rules
+                  h3 You can download and install applications only from trusted and reliable sources.
+                  p Procedure:
+                  //- ul.popUp__list.popUp__list--ios
+                  //-   li download *mobile app* 
+                  ul.popUp__list
+                    li - download *mobile app* 
+                    li - trust and save the file betandu.apk. 
+                    li - open the file and allow it to be installed. 
+            //- button.ellipse-btn(type="button" data-reg="contentRegButton") register
+          .popUp__ios
+            .popUp__head
+              svg.popUp__svg 
+                use(xlink:href="images/sprite.svg#icon-apple")
+              h2 how to install the ios app?
+            .popUp__border
+              .popUp__box
+                .popUp__rules
+                  h3 You can download and install applications only from trusted and reliable sources. 
+                  p Procedure:
+                  ul.popUp__list.popUp__list--ios
+                    li Before downloading, change your region in the Apple ID settings to India. 
+                  ul.popUp__list
+                    li - Download and install TestFlight.
+        button.ellipse-btn(type="button" data-reg="contentRegButton") register

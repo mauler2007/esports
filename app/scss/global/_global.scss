@@ -1,0 +1,128 @@
+html {
+  box-sizing: border-box;
+  background-blend-mode: overlay;
+  scroll-behavior: smooth;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/esports-bg/esports-mob-bg05x.jpg');
+
+  @include mq(xs) {
+    // background-position: center;
+  }
+
+  @include mq(md) {
+    background-image: url('../images/esports-bg/esports-desctop-bg1x.jpg');
+  }
+
+  @include mq(lg) {
+    background-position: bottom;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  transition: all .4s;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+html,
+body {
+  min-height: 100vh;
+  height: auto;
+}
+
+body {
+  position: relative;
+  font-family: 'Gobold', sans-serif;
+  line-height: 1.12;
+  color: $white;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  // background: rgb(0, 0, 0);
+  // background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 2%, rgba(237, 185, 94, 0) 100%);
+
+  &.no-scroll {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+  }
+
+  .heroes {
+    display: none;
+
+    @include mq(xs) {
+      display: block;
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+.main {
+  position: relative;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer {
+  // flex: 0 0 auto;
+  flex-shrink: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+.yellow-gradient {
+  background: -o-linear-gradient(180deg, #fff900 -73.86%, #ffd400 38.81%);
+  background: linear-gradient(180deg, #fff900 -73.86%, #ffd400 38.81%);
+}
+
+.blue-gradient {
+  background: -o-linear-gradient(180deg, #1795F9 -73.86%, #0354FF 38.81%);
+  background: linear-gradient(180deg, #1795F9 -73.86%, #0354FF 38.81%);
+}
+
+.red-gradient {
+  background: -o-linear-gradient(180deg, #F95A71 -73.86%, #F40F3E 38.81%);
+  background: linear-gradient(180deg, #F95A71 -73.86%, #F40F3E 38.81%);
+}
+
+.gradient-text {
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px black,
+    1px 1px 3px black,
+    1px 1px 4px black
+}

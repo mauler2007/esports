@@ -1,0 +1,152 @@
+.links {
+  position: relative;
+  z-index: 10;
+  padding-top: 1em;
+
+  @include mq(sm) {
+    padding-bottom: 0;
+    order: 1;
+  }
+
+  @include mq(lg) {
+    padding-top: 0;
+  }
+
+  // background: linear-gradient(180deg, rgba(0, 0, 0, 0) 39.33%, rgba(0, 0, 0, 0.8) 100%);
+
+  .links-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .reg-btn {
+
+      @include mq(xs) {
+        display: none;
+      }
+    }
+  }
+
+  .reg-btn,
+  .app-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .app-links {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    order: 2;
+
+    @include mq(xs) {
+      flex-direction: row;
+    }
+
+    @include mq(sm) {
+      order: 3;
+    }
+
+    a {
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+
+    &__svg {
+
+      width: 34vw;
+      height: 10vw;
+
+      @include mq(xs) {
+        width: 150px;
+        height: 45px;
+      }
+
+      @include mq(sm) {
+        width: 133px;
+        height: 40px;
+      }
+    }
+  }
+
+  .reg-btn,
+  .app-btn,
+  .app-links,
+  .soc-networks {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .reg-btn,
+  .app-btn,
+  .app-links {
+    justify-content: center;
+  }
+
+  .soc-networks {
+    max-width: 360px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(xs) {
+      display: none;
+    }
+  }
+
+  // .reg-btn,
+  // .app-btn {
+  //   button {
+  //     min-width: 243px;
+  //   }
+  // }
+
+  .app-btn {
+
+    @include mq(sm) {
+      order: 0;
+    }
+
+    @include mq(md) {
+      order: 1;
+    }
+  }
+
+  // @include mq(md) {
+
+  //   .app-btn,
+  //   .app-links,
+  //   .soc-networks {
+  //     margin-bottom: 0px;
+  //     width: 30%;
+  //   }
+
+  //   .soc-networks {
+  //     justify-content: flex-start;
+  //   }
+  // }
+
+  @include mq(lg) {
+
+    .app-btn,
+    .app-links,
+    .soc-networks {
+      // margin-bottom: 10px;
+      // width: 30%;
+    }
+
+    .soc-networks {
+      justify-content: center;
+
+      a {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    .app-links {
+      justify-content: flex-end;
+    }
+  }
+}

@@ -1,0 +1,173 @@
+.heroes {
+  // display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+
+
+  // @keyframes identifier {}
+
+  @include mq(xs) {
+    height: 100%;
+  }
+
+  @include mq(md) {
+    width: 60%;
+    right: 0;
+  }
+
+  @include mq(md) {
+    max-width: 50vw;
+  }
+
+  &::before {
+    display: none;
+
+    @include mq(xs) {
+      display: block;
+      content: '';
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      width: 100%;
+      height: 600px;
+      background: linear-gradient(0deg, #000000 0%, rgba(35, 35, 35, 0) 100%);
+    }
+
+    @include mq(md) {
+      height: 400px;
+    }
+
+    @include mq(md) {
+      display: none;
+    }
+  }
+
+  &__wrap {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include mq(xs) {
+      background-size: 80%;
+    }
+
+    @include mq(sm) {
+      background-size: 70%;
+    }
+
+    @include mq(md) {
+      background-size: 100%;
+      right: 0;
+      // width: 70%;
+    }
+
+    @include mq(lg) {
+      bottom: -4em;
+    }
+
+    &--archer {
+      background-image: url('../images/esports-heroes/archer2xdesctop.png');
+      background-position: -7em -3vw;
+      max-width: 660px;
+
+      @include mq(xs) {
+        max-width: 100%;
+        background-position: 9em 3em;
+        background-size: 120%;
+      }
+
+      @include mq(sm) {
+        background-position: 11em 2em;
+      }
+
+      @include mq(md) {
+        background-size: 120%;
+        background-position: 10em 9em;
+      }
+
+      @include mq(lg) {
+        left: 15%;
+        max-width: 800px;
+        background-size: 100%;
+        background-position: right -2em bottom
+      }
+    }
+
+    &--fbi {
+      background-image: url('../images/esports-heroes/fbi1xDestop.png');
+      background-position: -120px 0;
+      max-width: 340px;
+
+      @include mq(xs) {
+        max-width: 100%;
+        background-position: -7em 0vh;
+      }
+
+      @include mq(sm) {
+        background-position: -5em 0vh;
+      }
+
+      @include mq(md) {
+        background-position: 8em 6em;
+        background-size: 80%;
+        // max-width: 80%;
+      }
+
+      @include mq(lg) {
+        left: 4%;
+        max-width: 800px;
+        background-size: 60%;
+        background-position: center bottom;
+      }
+    }
+
+    &--sava {
+      background-image: url('../images/esports-heroes/sava2xDesctop.png');
+      background-position: -90px 10vh;
+      max-width: 400px;
+
+      @include mq(xs) {
+        background-position: 6em 2vh;
+        max-width: 100%;
+      }
+
+      @include mq(sm) {
+        background-position: 12em 2vh;
+      }
+
+      @include mq(md) {
+        max-width: 800px;
+        background-position: -4em 7em;
+        background-size: 80%;
+
+        // background-position: 22em 7em;
+      }
+
+      @include mq(lg) {
+        left: 0;
+        background-size: 60%;
+        background-position: left bottom -2em;
+      }
+    }
+
+    &--archer,
+    &--fbi,
+    &--sava {
+      // @include mq(lg) {
+      //   background-size: 30%;
+      // }
+    }
+  }
+
+  .text-shadow {
+    text-shadow: 1px 1px 2px black,
+      1px 1px 3px black,
+      1px 1px 4px black
+  }
+}

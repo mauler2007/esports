@@ -1,0 +1,33 @@
+.app-btn {
+  justify-content: center;
+
+  &__button {
+
+    padding: 1em 1em;
+    color: $white;
+    @extend %mont-800;
+    @include adaptiv-font(16, 14);
+    line-height: 1.2;
+    border-radius: 0.4em;
+    background-color: transparent;
+    // box-shadow: 0px 0px 15.3811px rgba(255, 195, 1, 0.5);
+    border: 2px solid $white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-style: normal;
+    transition: color 0.3s linear, background-color 0.3s linear, border-color 0.2s linear;
+
+    &:hover {
+      color: $black;
+      background-color: $white;
+      @extend %mont-800;
+      // border-color: transparent;
+    }
+
+    &:active {
+      background: linear-gradient(180deg, $white 0%, $white 100%);
+    }
+  }
+
+
+}

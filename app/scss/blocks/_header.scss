@@ -1,0 +1,54 @@
+.header {
+  background: linear-gradient(180deg, #010101 30.73%, rgba(1, 1, 1, 0) 100%);
+  position: relative;
+  z-index: 4;
+
+  &__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .6em 0;
+    margin-bottom: 2vw;
+
+    @include breakpoint($middle-bp) {
+      align-items: flex-start;
+    }
+
+    @include breakpoint($tablet-bp) {
+      align-items: center;
+    }
+
+    .soc-networks {
+      display: none;
+
+      @include mq(xs) {
+        display: flex;
+      }
+
+      a {
+        margin-left: 6px;
+        margin-right: 6px;
+      }
+    }
+  }
+
+  &__reg {
+    display: none;
+
+    @include mq(xs) {
+      margin-left: auto;
+      display: block;
+    }
+  }
+
+  &__box {
+    max-height: 54px;
+
+    @include mq(xs) {
+      max-height: 91px;
+      margin-left: 10px
+    }
+  }
+}

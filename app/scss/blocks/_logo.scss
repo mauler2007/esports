@@ -1,0 +1,63 @@
+.logo {
+  display: flex;
+
+  &__link {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+    filter: drop-shadow(2px 4px 6px black);
+
+    @keyframes shine {
+      0% {
+        mask-position: -50%;
+        -webkit-mask-position: 150%;
+      }
+
+      100% {
+        mask-position: -50%;
+        -webkit-mask-position: -50%;
+      }
+    }
+
+    &:hover {
+      -webkit-animation: shine 2s infinite;
+      animation: shine 2s infinite;
+      -webkit-mask-image: linear-gradient(
+        -75deg,
+        rgba(255, 255, 255, 0.7) 30%,
+        #fff 50%,
+        rgba(255, 255, 255, 0.7) 70%
+      );
+      -webkit-mask-size: 200%;
+    }
+
+    img {
+      align-self: flex-end;
+
+      @include mq(sm) {
+        min-width: 160px;
+      }
+    }
+  }
+
+  &__svg {
+    // width: 120px;
+    // height: 23px;
+    width: 190px;
+    height: 25px;
+
+    // width: 40vw;
+    // height: 4.2vw;
+
+    filter: drop-shadow(0px 0px 32px rgba(0, 0, 0, 0.8));
+
+    @include mq(md) {
+      max-width: 197px;
+      max-height: 35px;
+    }
+  }
+}

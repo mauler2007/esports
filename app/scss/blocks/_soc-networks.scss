@@ -1,0 +1,56 @@
+.soc-networks {
+  display: flex;
+  order: 1;
+
+  @include mq(xs) {
+    order: 0;
+    margin-left: auto;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 34px;
+    width: 34px;
+
+    background-color: $accent;
+    border-radius: 50%;
+
+    // padding-left: 2%;
+    // padding-right: 2%;
+
+    &:first-child {
+      background-color: red;
+      @extend %mont-800;
+      pointer-events: none;
+      border: 1px solid white;
+      color: $white;
+      font-weight: 500;
+      font-size: .8em;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+
+      use {
+        fill: $black;
+        transition: all .4s;
+      }
+    }
+
+    &:hover {
+      background-color: $grey;
+
+      svg {
+
+        use {
+          fill: $white;
+        }
+      }
+    }
+  }
+}
